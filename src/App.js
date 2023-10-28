@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import WeatherSearch from "./WeatherSearch";
-import axios from "axios";
 
 function App() {
   return (

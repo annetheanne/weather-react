@@ -1,1 +1,11 @@
+.Weather-Wrapper {
+  border: 2px solid #eeeeee;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
 
+.Signature {
+  text-align: center;
+}

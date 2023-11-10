@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DisplayDate from "./DisplayDate";
 import WeatherToday from "./WeatherToday";
 import axios from "axios";
 import "./Weather.css";

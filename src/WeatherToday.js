@@ -13,7 +13,7 @@ export default function WeatherToday(props) {
       <div classname="container">
         <div className="row text-center">
           <div className="col">
-            <img src={weatherData.icon} alt={props.data.description} />
+            <img src={props.data.icon} alt={props.data.description} />
           </div>
           <div className="col mt-4">
             <div>{Math.round(props.data.temperature)}°F</div>

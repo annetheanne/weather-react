@@ -1,5 +1,6 @@
 import React from "react";
 import DisplayDate from "./DisplayDate";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherToday.css";
 
 export default function WeatherToday(props) {
@@ -13,7 +14,11 @@ export default function WeatherToday(props) {
       <div classname="container">
         <div className="row text-center">
           <div className="col">
-            <img src={props.data.icon} alt={props.data.description} />
+            <WeatherIcon
+              code={props.data.icon}
+              alt={props.data.description}
+              height={110}
+            />
           </div>
           <div className="col mt-4">
             <div>{Math.round(props.data.temperature)}°F</div>

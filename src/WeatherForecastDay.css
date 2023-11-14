@@ -1,0 +1,7 @@
+.WeatherForecastDay {
+  text-align: center;
+}
+
+.WeatherForecastDay-temp-min {
+  font-weight: 200;
+}

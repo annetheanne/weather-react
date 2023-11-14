@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import WeatherForecastDay from "./WeatherForecastDay";
 import axios from "axios";
 
 export default function WeatherForecast(props) {
-  let [ready, setReady] = useState(false);
+  let [results, setResults] = useState(false);
   let [forecast, setForecast] = useState(null);
 
   useEffect(() => {
-    setReady(false);
+    setResults(false);
   }, [props.coordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
-    setReady(true);
+    setResults(true);
   }
 
-  function ready() {
+  function result() {
     let apiKey = "125f64a9971676c48141e4f1453acef7";
     let latitude = props.coordinates.lat;
     let longitude = props.coordinates.lon;
@@ -23,7 +23,7 @@ export default function WeatherForecast(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  if (ready) {
+  if (results) {
     return (
       <div className="WeatherForecast">
         <div className="row">
@@ -42,7 +42,7 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    ready();
+    result();
     return null;
   }
 }

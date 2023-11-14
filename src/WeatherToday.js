@@ -26,7 +26,7 @@ export default function WeatherToday(props) {
           <div className="col mt-4">
             <div>Feels like: {Math.round(props.data.feels)}°F</div>
             <div>Humidity: {props.data.humidity}%</div>
-            <div>Wind: {props.data.wind}km/h</div>
+            <div>Wind: {Math.round(props.data.wind)} km/h</div>
           </div>
         </div>
       </div>

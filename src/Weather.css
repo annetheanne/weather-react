@@ -6,6 +6,17 @@
   max-width: 600px;
 }
 
-.Signature {
-  text-align: center;
+.Weather-Search {
+  background-color: #77628c;
+  border-color: #77628c;
+}
+
+.Weather-Search:hover {
+  background-color: #9980b0;
+  border-color: #9980b0;
+}
+
+.Weather-Signature {
+  font-size: 14px;
+  color: #77628c;
 }

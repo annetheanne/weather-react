@@ -1,0 +1,19 @@
+.WeatherToday-city {
+  color: #71a0a5;
+  font-size: 35px;
+}
+
+.WeatherToday-date,
+.WeatherToday-description {
+  color: #acc6aa;
+  font-size: 20px;
+}
+
+.WeatherToday-temp {
+  color: #71a0a5;
+  font-size: 35px;
+}
+
+.WeatherToday-stats {
+  color: #acc6aa;
+}

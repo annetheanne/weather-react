@@ -57,7 +57,7 @@ export default function Weather(props) {
                 <input
                   type="submit"
                   value="Search"
-                  className="btn btn-secondary w-100"
+                  className="btn btn-secondary w-100 Weather-Search"
                 />
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Weather(props) {
           <WeatherToday data={weatherData} />
           <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
-        <div className="Signature">
+        <div className="text-center Weather-Signature">
           <a
             href="https://github.com/annetheanne/weather-react"
             target="_blank"

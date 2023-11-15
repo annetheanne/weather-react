@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.WeatherForecastDay-date,
+.WeatherForecastDay-temp {
+  color: #77628c;
+}
+
 .WeatherForecastDay-temp-min {
   font-weight: 200;
 }
